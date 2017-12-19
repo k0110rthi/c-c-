@@ -1,0 +1,67 @@
+
+#include<stdio.h>
+
+int main()
+{
+    
+    
+    int i,j;
+   
+        scanf("%d%d",&i,&j);
+        if(i == j)
+        {
+                printf("\nNumbers are equal");
+
+        }     
+        else
+        {
+              printf("\nNumbers are not equal");
+        }    
+return 0;
+} 
+
+
+#include<stdio.h>
+
+int main()
+{
+    
+    
+    int i;
+   
+        scanf("%d",&i);
+        if(i > 0)
+        {
+                printf("\nNumbers is positive");
+
+        }     
+        else
+        {
+              printf("\nNumbers is negative");
+        }    
+return 0;
+}
+
+#include<stdio.h>
+
+int main()
+{
+    
+    
+    int a,b,c;
+   
+        scanf("%d%d%d",&a,&b,&c);
+        if(a==b || a==c || b==c)
+        {
+                printf("\nThis is number is an isocles triangle");
+
+        }     
+        else
+        {
+              printf("\nThe number is not an isocles triangle");
+        }    
+return 0;
+}
+
+
+
