@@ -91,3 +91,76 @@ return 0;
 }
 
 
+#include<stdio.h>
+int main()
+{
+    int cust_id,unit,i;
+    float s,n,p;
+    char cust_name[20];
+    scanf("%d%d%s",&cust_id,&unit,&cust_name);
+    printf("\nCustomer IDNO : %d",cust_id);
+    printf("\nUnits : %d",unit);
+    printf("\nCustomer name : %s",cust_name);
+    if(unit < 200)
+    {
+        p=unit*1.20;
+        printf("\nAmount charges @1.20 per unit = %.2f",p);
+    }
+    else if(unit >= 200 && unit <= 400)
+    {
+        p=unit*1.50;
+        printf("\nAmount charges @1.50 per unit = %.2f",p);
+        if(p > 400)
+        {
+            s=unit*0.15;
+            n=s+p;
+            printf("\nSurcharge : %.2f",s);
+            printf("\nNet amount to be paid : %.2f",n);
+        }
+        else
+        {
+            printf("\n");
+        }
+    }
+    else if(unit >= 400 && unit <= 600)
+    {
+        p=unit*2;
+        printf("\nAmount charges @2.00 per unit = %.2f",p);
+    
+     if(p > 400)
+     {
+        s=unit*0.15;
+        n=s+p;
+        printf("\nSurcharge : %.2f",s);
+        printf("\nNet amount to be paid : %.2f",n);
+      }
+      else
+     {
+        printf("\n");
+     }
+    }
+    else if(unit >= 600)
+    {
+        p=unit*2;
+        printf("\nAmount charges @2.00 per unit = %.2f",p);
+    
+     if(p > 400)
+     {
+        s=unit*0.15;
+        n=s+p;
+        printf("\nSurcharge : %.2f",s);
+        printf("\nNet amount to be paid : %.2f",n);
+     }
+     else
+     {
+        printf("\n");
+     }
+    }
+    else
+    {
+        printf("\nWrong input");
+    }
+    return 0;
+}
+
+
