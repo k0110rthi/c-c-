@@ -8,3 +8,68 @@ int main()
 }
 
 
+#include<stdio.h>
+int main()
+{
+    int sum = 0;
+    printf("The first 10 natural number is :");
+    printf("\n");
+   for(int i=1;i<=10;i++)
+   {
+     printf("%d ",i);
+     sum = sum + i;
+   }
+   printf("\nThe Sum is : %d",sum);
+}
+
+
+#include<stdio.h>
+int main()
+{ 
+    float avg = 0;
+    float sum = 0;
+    int number;
+    printf("Input the 10 numbers :");
+    for(int i = 1; i<11; i++)
+    {
+        printf("\nNumber-%d:",i);
+        scanf("%d",&number);
+        sum = sum + number;
+        printf("%d",number);
+    }
+   printf("\nThe Sum of 10 no is : %.0f",sum);
+   avg = sum/10;
+   printf("\nThe Average is : %f",avg);
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int limit;
+    int cube;
+    printf("Input number of terms :");
+    scanf("%d",&limit);
+    printf(" %d",limit);
+    for(int i=1; i<=limit; i++)
+    {
+        cube = i * i * i;
+        printf("\nNumber is : %d and cube of the %d is :%d",i,i,cube);
+    }
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int number;
+    scanf("%d",&number);
+    for(int i = 1; i<=number; i++)
+    {
+        for(int j = i; j>0; j--)
+        {
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+}
