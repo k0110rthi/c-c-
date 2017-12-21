@@ -1,0 +1,14 @@
+#include<stdio.h>
+void callbyvalue(int n)
+{
+    n=n+100;
+    printf("\nResult : %d",n);
+    
+}
+int main()
+{
+   int n=100;
+    printf("\nValue of n : %d",n);
+    callbyvalue(n);
+    return 0;
+}
