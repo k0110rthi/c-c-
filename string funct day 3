@@ -31,3 +31,40 @@ int main( )
 }
 
 
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    int n;
+    char s[100]="karthinatarajan";
+    n=strlen(s);
+    printf("\nThe size of the string entered is %d",n);
+    return 0;
+}
+
+
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{ int n;
+    char abc[20]="karthi";
+    char bcd[20]="natarajan";
+    n=strcmp(abc,bcd);
+    if(n==0)
+    {
+        printf("\nEntered string is same");
+        
+    }
+    else
+    {
+        printf("\nEntered string is different");
+        
+    }
+    return 0;
+    
+}
+
+
+
