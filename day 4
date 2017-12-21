@@ -1,3 +1,4 @@
+****************************************CALL BY VALUE **************************************************************
 #include<stdio.h>
 void callbyvalue(int n)
 {
@@ -13,7 +14,7 @@ int main()
     return 0;
 }
 
-
+**********************************************CALL BY REFEREFNCE*****************************************************
 #include<stdio.h>
 void callbyref(int *n)
 {
@@ -29,7 +30,7 @@ int main()
     return 0;
 }
 
-
+*******************************************GLOBAL,LOCAL,CONST,MACRO DEFINITION,TERNARY OPERATOR******************************
 
 #include<stdio.h>
 #define abc 23
@@ -43,3 +44,30 @@ int main()
     printf("\nValue of c = %d  d=%d ",c,abc);
     return 0;
 }
+
+
+******************************************FUNCTION CALL PROGRAM WITH STRING **************************************************
+#include<stdio.h>
+#include<string.h>
+char* abc();
+char* bbc();
+void main()
+
+{
+    printf("\nMain executed");
+    printf("\nString passed from abc : %s",abc());
+
+}
+char* abc()
+{
+    char c[10];
+    printf("\nAbc executed ");
+    printf("\nString passed from bbc : %s",bbc());
+    return "karthi";
+}
+char* bbc()
+{
+    printf("\nbbc executed");
+   return "hello"; 
+}
+
