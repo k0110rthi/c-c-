@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+ 
+int main( )
+{
+   char source[ ] = "karthi" ;
+   char destin[ ]= "natarajan" ;
+ 
+   printf ( "\nSource string = %s", source ) ;
+   printf ( "\nTarget string = %s", destin ) ;
+ 
+   strcat ( destin, source ) ;
+ 
+   printf ( "\nTarget string after strcat( ) = %s", destin ) ;
+   return 0;
+}
+
+
+#include <stdio.h>
+#include <string.h>
+ 
+int main( )
+{
+   char source[20 ] = "karthi";
+   char desn[20]= "natarajan";
+   printf ( "\nSource string = %s", source );
+   printf ( "\nDestination string = %s", desn );
+   strcpy (desn,source);
+   printf ( "\nString after strcpy( ) = %s",desn);
+   return 0;
+}
+
+
