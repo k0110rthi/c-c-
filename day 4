@@ -12,3 +12,19 @@ int main()
     callbyvalue(n);
     return 0;
 }
+
+
+#include<stdio.h>
+void callbyref(int *n)
+{
+    (*n)+=100;
+    printf("\nResult : %d",*n);
+    
+}
+int main()
+{
+   int n=100;
+    printf("\nValue of n : %d",n);
+    callbyref(&n);
+    return 0;
+}
